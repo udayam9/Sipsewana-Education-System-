@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="915.0" prefWidth="1306.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <ImageView fitHeight="950.0" fitWidth="1306.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/back%20dash%20.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="1109.0" layoutY="817.0" onAction="#logOutOnAction" opacity="0.17" prefHeight="90.0" prefWidth="191.0" style="-fx-background-color: #ff002b; -fx-background-radius: 50;" text="LOG OUT" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Demi" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="260.0" layoutY="216.0" onAction="#StudentRegOnAction" opacity="0.13" prefHeight="141.0" prefWidth="806.0" style="-fx-background-color: black; -fx-background-radius: 90;" text=" ">
+         <font>
+            <Font name="Franklin Gothic Demi" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="260.0" layoutY="565.0" onAction="#StudentRegOnAction" opacity="0.13" prefHeight="141.0" prefWidth="806.0" style="-fx-background-color: black; -fx-background-radius: 90;" text=" ">
+         <font>
+            <Font name="Franklin Gothic Demi" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="260.0" layoutY="390.0" onAction="#StudentRegOnAction" opacity="0.13" prefHeight="141.0" prefWidth="806.0" style="-fx-background-color: black; -fx-background-radius: 90;" text=" ">
+         <font>
+            <Font name="Franklin Gothic Demi" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="288.0" layoutY="236.0" onAction="#StudentRegOnAction" prefHeight="97.0" prefWidth="356.0" style="-fx-background-color: #9ef01a; -fx-background-radius: 50;" text="STUDENT REGISTRATION">
+         <font>
+            <Font name="Franklin Gothic Demi" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="288.0" layoutY="410.0" onAction="#ProgramRegOnAction" prefHeight="97.0" prefWidth="356.0" style="-fx-background-color: #9ef01a; -fx-background-radius: 50;" text="PROGRAM REGISTRATION">
+         <font>
+            <Font name="Franklin Gothic Demi" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="288.0" layoutY="585.0" onAction="#paymentOnAction" prefHeight="97.0" prefWidth="356.0" style="-fx-background-color: #9ef01a; -fx-background-radius: 50;" text="PAYMENTS">
+         <font>
+            <Font name="Franklin Gothic Demi" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="744.0" layoutY="253.0" onAction="#StudentViewAllOnAction" prefHeight="64.0" prefWidth="293.0" style="-fx-background-color: #02c39a; -fx-background-radius: 50;" text="VIEW ALL" textFill="#2e2e2e">
+         <font>
+            <Font name="Franklin Gothic Demi" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="744.0" layoutY="426.0" onAction="#programViewAllOnAction" prefHeight="64.0" prefWidth="293.0" style="-fx-background-color: #02c39a; -fx-background-radius: 50;" text="VIEW ALL" textFill="#2e2e2e">
+         <font>
+            <Font name="Franklin Gothic Demi" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="744.0" layoutY="602.0" onAction="#paymentViewAllOnAction" prefHeight="64.0" prefWidth="293.0" style="-fx-background-color: #02c39a; -fx-background-radius: 50;" text="VIEW ALL" textFill="#2e2e2e">
+         <font>
+            <Font name="Franklin Gothic Demi" size="22.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="649.0" layoutY="282.0" prefHeight="5.0" prefWidth="91.0" style="-fx-background-radius: 50;" />
+      <Separator layoutX="649.0" layoutY="456.0" prefHeight="5.0" prefWidth="91.0" style="-fx-background-radius: 50;" />
+      <Separator layoutX="649.0" layoutY="632.0" prefHeight="5.0" prefWidth="91.0" style="-fx-background-radius: 50;" />
+      <JFXButton buttonType="RAISED" layoutX="1125.0" layoutY="830.0" onAction="#logOutOnAction" prefHeight="64.0" prefWidth="159.0" style="-fx-background-color: #ff002b; -fx-background-radius: 50;" text="LOG OUT" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Demi" size="22.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

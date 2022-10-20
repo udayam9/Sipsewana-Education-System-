@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="580.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MiniStudentUpdateFormController">
+    <children>
+        <ImageView fitHeight="775.0" fitWidth="1025.0" layoutX="-97.0" layoutY="-125.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/back%20dash%20.jpg" />
+            </image>
+        </ImageView>
+        <JFXButton buttonType="RAISED" layoutX="549.0" layoutY="507.0" onAction="#registerOnAction" prefHeight="52.0" prefWidth="318.0" style="-fx-background-color: #ffa200; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: #2b9348;" text="Update" textFill="WHITE">
+            <font>
+                <Font name="Franklin Gothic Demi" size="22.0" />
+            </font>
+        </JFXButton>
+        <Separator layoutX="643.0" layoutY="263.0" prefHeight="5.0" prefWidth="91.0" style="-fx-background-radius: 50;" />
+        <Separator layoutX="643.0" layoutY="401.0" prefHeight="5.0" prefWidth="91.0" style="-fx-background-radius: 50;" />
+        <TextField editable="false" layoutX="157.0" layoutY="92.0" prefHeight="44.0" prefWidth="245.0" style="-fx-background-color: #ccff33; -fx-background-radius: 50; -fx-border-color: #38b000; -fx-border-radius: 50;" />
+        <Label layoutX="40.0" layoutY="102.0" text="Student ID :" textFill="#365700">
+            <font>
+                <Font name="Franklin Gothic Demi" size="21.0" />
+            </font>
+        </Label>
+        <Label layoutX="82.0" layoutY="155.0" prefHeight="24.0" prefWidth="102.0" text="Name :" textFill="#365700">
+            <font>
+                <Font name="Franklin Gothic Demi" size="21.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtName" layoutX="157.0" layoutY="145.0" prefHeight="44.0" prefWidth="710.0" style="-fx-background-color: #ccff33; -fx-background-radius: 50; -fx-border-color: #38b000; -fx-border-radius: 50;">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtAddress" layoutX="157.0" layoutY="199.0" prefHeight="47.0" prefWidth="710.0" style="-fx-background-color: #ccff33; -fx-background-radius: 50; -fx-border-color: #38b000; -fx-border-radius: 50;">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </TextField>
+        <Label layoutX="60.0" layoutY="209.0" prefHeight="24.0" prefWidth="102.0" text="Address :" textFill="#365700">
+            <font>
+                <Font name="Franklin Gothic Demi" size="21.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtContact" layoutX="157.0" layoutY="253.0" prefHeight="44.0" prefWidth="380.0" style="-fx-background-color: #ccff33; -fx-background-radius: 50; -fx-border-color: #38b000; -fx-border-radius: 50;">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </TextField>
+        <Label layoutX="59.0" layoutY="263.0" prefHeight="24.0" prefWidth="102.0" text="Contact :" textFill="#365700">
+            <font>
+                <Font name="Franklin Gothic Demi" size="21.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtEducation" layoutX="157.0" layoutY="308.0" prefHeight="47.0" prefWidth="710.0" style="-fx-background-color: #ccff33; -fx-background-radius: 50; -fx-border-color: #38b000; -fx-border-radius: 50;">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </TextField>
+        <Label layoutX="40.0" layoutY="316.0" prefHeight="24.0" prefWidth="122.0" text="Education :" textFill="#365700">
+            <font>
+                <Font name="Franklin Gothic Demi" size="21.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblStudentId" layoutX="184.0" layoutY="102.0" text="Student ID :" textFill="#2b6b00">
+            <font>
+                <Font name="Franklin Gothic Demi" size="21.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="cmbGender" layoutX="157.0" layoutY="421.0" prefHeight="44.0" prefWidth="188.0" promptText="Select Gender" style="-fx-background-color: #ccff33; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: #38b000;" />
+      <TextField fx:id="txtBirthday" layoutX="157.0" layoutY="364.0" prefHeight="47.0" prefWidth="293.0" style="-fx-background-color: #ccff33; -fx-background-radius: 50; -fx-border-color: #38b000; -fx-border-radius: 50;">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
+      <Label layoutX="54.0" layoutY="376.0" prefHeight="24.0" prefWidth="122.0" text="Birthday :" textFill="#365700">
+         <font>
+            <Font name="Franklin Gothic Demi" size="21.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

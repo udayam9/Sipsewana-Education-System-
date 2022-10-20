@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="927.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MiniProgramUpdateFormController">
+    <children>
+        <ImageView fitHeight="950.0" fitWidth="1306.0" layoutX="-62.0" layoutY="-194.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/back%20dash%20.jpg" />
+            </image>
+        </ImageView>
+        <JFXButton buttonType="RAISED" layoutX="546.0" layoutY="432.0" onAction="#addOnAction" prefHeight="52.0" prefWidth="318.0" style="-fx-background-color: #ffa200; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: #2b9348;" text="Update" textFill="WHITE">
+            <font>
+                <Font name="Franklin Gothic Demi" size="22.0" />
+            </font>
+        </JFXButton>
+        <Separator layoutX="649.0" layoutY="318.0" prefHeight="5.0" prefWidth="91.0" style="-fx-background-radius: 50;" />
+        <TextField fx:id="txtpId" layoutX="163.0" layoutY="103.0" prefHeight="44.0" prefWidth="245.0" style="-fx-background-color: #ccff33; -fx-background-radius: 50; -fx-border-color: #38b000; -fx-border-radius: 50;" />
+        <Label layoutX="38.0" layoutY="113.0" text="Program ID :" textFill="#365700">
+            <font>
+                <Font name="Franklin Gothic Demi" size="21.0" />
+            </font>
+        </Label>
+        <Label layoutX="88.0" layoutY="185.0" prefHeight="24.0" prefWidth="102.0" text="Name :" textFill="#365700">
+            <font>
+                <Font name="Franklin Gothic Demi" size="21.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtName" layoutX="163.0" layoutY="175.0" prefHeight="44.0" prefWidth="710.0" style="-fx-background-color: #ccff33; -fx-background-radius: 50; -fx-border-color: #38b000; -fx-border-radius: 50;">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtDuration" layoutX="163.0" layoutY="251.0" prefHeight="47.0" prefWidth="380.0" style="-fx-background-color: #ccff33; -fx-background-radius: 50; -fx-border-color: #38b000; -fx-border-radius: 50;">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </TextField>
+        <Label layoutX="60.0" layoutY="261.0" prefHeight="24.0" prefWidth="102.0" text="Duration :" textFill="#365700">
+            <font>
+                <Font name="Franklin Gothic Demi" size="21.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtFee" layoutX="163.0" layoutY="326.0" prefHeight="44.0" prefWidth="380.0" style="-fx-background-color: #ccff33; -fx-background-radius: 50; -fx-border-color: #38b000; -fx-border-radius: 50;">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </TextField>
+        <Label layoutX="103.0" layoutY="336.0" prefHeight="24.0" prefWidth="102.0" text="Fee :" textFill="#365700">
+            <font>
+                <Font name="Franklin Gothic Demi" size="21.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

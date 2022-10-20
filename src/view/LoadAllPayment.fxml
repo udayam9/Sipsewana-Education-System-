@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="917.0" prefWidth="1299.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoadAllPaymentController">
+    <children>
+        <ImageView fitHeight="950.0" fitWidth="1306.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/back%20dash%20.jpg" />
+            </image>
+        </ImageView>
+      <TextField fx:id="txtName1" layoutX="27.0" layoutY="134.0" opacity="0.19" prefHeight="242.0" prefWidth="1253.0" style="-fx-background-color: black; -fx-background-radius: 10; -fx-border-color: #38b000; -fx-border-radius: 10;">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
+        <Separator layoutX="649.0" layoutY="456.0" prefHeight="5.0" prefWidth="91.0" style="-fx-background-radius: 50;" />
+        <Separator layoutX="32.0" layoutY="121.0" prefHeight="5.0" prefWidth="1237.0" style="-fx-background-radius: 50;" />
+        <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="22.0" onAction="#backToHomeOnAtion" prefHeight="64.0" prefWidth="159.0" style="-fx-background-color: #ff002b; -fx-background-radius: 50;" text="&lt; Home" textFill="WHITE">
+            <font>
+                <Font name="Franklin Gothic Demi" size="22.0" />
+            </font>
+        </JFXButton>
+        <Label layoutX="38.0" layoutY="157.0" text="Program ID :" textFill="#365700">
+            <font>
+                <Font name="Franklin Gothic Demi" size="21.0" />
+            </font>
+        </Label>
+        <Label layoutX="88.0" layoutY="210.0" prefHeight="24.0" prefWidth="102.0" text="Name :" textFill="#365700">
+            <font>
+                <Font name="Franklin Gothic Demi" size="21.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtPName" layoutX="163.0" layoutY="200.0" prefHeight="44.0" prefWidth="710.0" style="-fx-background-color: #ccff33; -fx-background-radius: 50; -fx-border-color: #38b000; -fx-border-radius: 50;">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtDuration" layoutX="163.0" layoutY="254.0" prefHeight="44.0" prefWidth="1103.0" style="-fx-background-color: #ccff33; -fx-background-radius: 50; -fx-border-color: #38b000; -fx-border-radius: 50;">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </TextField>
+        <Label layoutX="59.0" layoutY="264.0" prefHeight="24.0" prefWidth="102.0" text="Duration :" textFill="#365700">
+            <font>
+                <Font name="Franklin Gothic Demi" size="21.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtFee" layoutX="163.0" layoutY="308.0" prefHeight="44.0" prefWidth="380.0" style="-fx-background-color: #ccff33; -fx-background-radius: 50; -fx-border-color: #38b000; -fx-border-radius: 50;">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </TextField>
+        <Label layoutX="104.0" layoutY="318.0" prefHeight="24.0" prefWidth="102.0" text="Fee :" textFill="#365700">
+            <font>
+                <Font name="Franklin Gothic Demi" size="21.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tblStudent" layoutX="27.0" layoutY="388.0" prefHeight="510.0" prefWidth="1253.0" style="-fx-background-color: #d3fac7; -fx-border-radius: 50; -fx-background-radius: 50;">
+            <columns>
+                <TableColumn fx:id="colSId" prefWidth="140.99996948242188" text="Student ID" />
+                <TableColumn fx:id="colSName" prefWidth="259.0" text="Name" />
+                <TableColumn fx:id="colAddress" prefWidth="380.0" text="Address" />
+                <TableColumn fx:id="colBirthday" prefWidth="180.0" text="Birthday" />
+                <TableColumn fx:id="colContact" prefWidth="186.0" text="contact " />
+                <TableColumn fx:id="colGender" prefWidth="106.0" text="Gender" />
+            </columns>
+        </TableView>
+        <ComboBox fx:id="cmbProgramId" layoutX="164.0" layoutY="147.0" prefHeight="44.0" prefWidth="188.0" promptText="   Program ID" style="-fx-background-color: #ccff33; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: #38b000;" />
+    </children>
+</AnchorPane>

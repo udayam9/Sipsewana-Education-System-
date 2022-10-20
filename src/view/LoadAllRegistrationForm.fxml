@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="917.0" prefWidth="1299.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoadAllRegistrationFormController">
+    <children>
+        <ImageView fitHeight="950.0" fitWidth="1306.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/back%20dash%20.jpg" />
+            </image>
+        </ImageView>
+        <Separator layoutX="649.0" layoutY="456.0" prefHeight="5.0" prefWidth="91.0" style="-fx-background-radius: 50;" />
+        <Separator layoutX="32.0" layoutY="121.0" prefHeight="5.0" prefWidth="1237.0" style="-fx-background-radius: 50;" />
+        <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="22.0" onAction="#backToHomeOnAtion" prefHeight="64.0" prefWidth="159.0" style="-fx-background-color: #ff002b; -fx-background-radius: 50;" text="&lt; Home" textFill="WHITE">
+            <font>
+                <Font name="Franklin Gothic Demi" size="22.0" />
+            </font>
+        </JFXButton>
+        <TableView fx:id="tblRegistration" layoutX="27.0" layoutY="147.0" prefHeight="739.0" prefWidth="1253.0" style="-fx-background-color: #d3fac7; -fx-border-radius: 50; -fx-background-radius: 50;">
+            <columns>
+                <TableColumn fx:id="colRegId" prefWidth="140.99996948242188" text="REG ID" />
+                <TableColumn fx:id="colSId" prefWidth="147.0" text="Student ID" />
+                <TableColumn fx:id="colDate" prefWidth="206.0" text="Date" />
+                <TableColumn fx:id="colTime" prefWidth="220.0" text="Time" />
+                <TableColumn fx:id="colPayment" prefWidth="218.0" text="Payment" />
+                <TableColumn fx:id="colPName" prefWidth="320.0" text="Program Name" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
